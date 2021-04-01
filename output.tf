@@ -1,5 +1,5 @@
 output "backend_api_url" {
-  value = "http://${module.ec2_backend.public_ip}:3030"
+  value = "http://${module.ec2_backend.public_ip[0]}:3030"
 }
 
 output "backend_az" {
