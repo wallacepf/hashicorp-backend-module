@@ -14,11 +14,6 @@ variable "backend_name" {
   type        = string
 }
 
-variable "ami" {
-  description = "AMI ID"
-  type        = string
-}
-
 variable "var.instance_type" {
   description = "Instance size"
   default     = "t2.micro"

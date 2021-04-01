@@ -50,7 +50,7 @@ module "ec2_backend" {
   instance_count = var.backend_instance_count
 
   name                        = var.backend_name
-  ami                         = var.ami != "" ? var.ami : data.aws_ami.backend_ami.id
+  ami                         = data.aws_ami.backend_ami.id
   instance_type               = var.instance_type
   key_name                    = var.key_name
   subnet_ids                  = var.backend_subnets
