@@ -14,7 +14,7 @@ variable "backend_name" {
   type        = string
 }
 
-variable "var.instance_type" {
+variable "instance_type" {
   description = "Instance size"
   default     = "t2.micro"
 }
