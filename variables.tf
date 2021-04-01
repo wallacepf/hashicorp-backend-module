@@ -34,3 +34,8 @@ variable "security_group" {
 variable "app_s3_addr" {
   description = "S3 address where the application is"
 }
+
+variable "tags" {
+  description = "Required Tags"
+  type        = map(any)
+}
